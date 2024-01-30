@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 import pickle
+import sklearn
 
 columns = [
     'Berlin', 'Hamburg', 'Munich', 'Koeln', 'Essen',
@@ -27,7 +28,6 @@ def main():
     data = {}
     for col in columns:
         data[col] = int(st.text_input(col, "0"))
-
 
     if st.button("Predict"):
         dataset = pd.DataFrame(data, index=[0])
