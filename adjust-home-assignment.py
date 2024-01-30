@@ -1,7 +1,6 @@
 import pandas as pd
 import streamlit as st
 import pickle
-import sklearn
 
 columns = [
     'Berlin', 'Hamburg', 'Munich', 'Koeln', 'Essen',
